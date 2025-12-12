@@ -57,7 +57,7 @@ const ProjectPage = () => {
 					<MaxWidthWrapper>
 						<TitleHeader subText="our work" heading="Project showcase" />
 						<div className="flex flex-col px-5">
-							<div className="flex flex-col w-full py-40">
+							<div className="flex flex-col w-full sm:py-40">
 								<div className="grid gap-5 row-gap-10 lg:grid-cols-2">
 									{works.slice(0, 4).map((work, index) => (
 										<WorkCard key={`work-${index}`} work={work} />

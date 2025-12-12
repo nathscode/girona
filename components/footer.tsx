@@ -17,7 +17,7 @@ const Footer = () => {
 							<h5 className="font-semibold text-sm text-gray-400">Call Us</h5>
 							<Link
 								href={`tel:+2348036926726`}
-								className="font-bold text-xl text-white"
+								className="font-bold text-lg sm:text-xl text-white"
 							>
 								(234)803 692 6726
 							</Link>
@@ -33,7 +33,7 @@ const Footer = () => {
 							</h5>
 							<Link
 								href={`mail:support@gironalimited.com`}
-								className="font-bold text-xl text-white"
+								className="font-bold text-lg sm:text-xl text-white"
 							>
 								support@gironalimited.com
 							</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
 							<h5 className="font-semibold text-sm text-gray-400">
 								Head Office
 							</h5>
-							<h1 className="font-bold text-xl text-white">
+							<h1 className="font-bold text-lg sm:text-xl text-white">
 								Km 3, Npa Expressway, Ekpan-Warri ,Delta State
 							</h1>
 						</div>

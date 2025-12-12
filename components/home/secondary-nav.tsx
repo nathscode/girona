@@ -128,7 +128,7 @@ export default function SecondaryNav({ title }: Props) {
 						</div>
 						<div className="justify-end hidden sm:flex">
 							<CustomButton
-								href="/project"
+								href="/projects"
 								name="View Our Work"
 								className="text-sm"
 							/>

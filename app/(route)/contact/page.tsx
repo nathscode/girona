@@ -24,17 +24,17 @@ const ContactPage = () => {
 						/>
 						<div className="flex flex-col  px-5"></div>
 					</MaxWidthWrapper>
-					<div className="flex justify-start w-full">
+					<div className="flex flex-wrap sm:flex-nowrap justify-start w-full">
 						<div className="w-full sm:w-2/3 bg-accent">
 							<MaxWidthWrapper>
-								<div className="flex flex-col p-10">
+								<div className="flex flex-col sm:p-10">
 									<ContactForm />
 								</div>
 							</MaxWidthWrapper>
 						</div>
 						<div className="w-full sm:w-1/3">
 							<MaxWidthWrapper>
-								<div className="flex flex-col justify-start">
+								<div className="flex flex-col justify-start p-10">
 									<h1 className="text-lg font-unbounded font-bold">
 										Office Location
 									</h1>
