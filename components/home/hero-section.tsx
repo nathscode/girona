@@ -9,21 +9,27 @@ import { Icons } from "../icons";
 import CustomButton from "../common/button";
 import MaxWidthWrapper from "../common/max-width-wrapper";
 
-const IMAGES = [
+const SLIDES = [
 	{
 		id: 1,
 		src: "/images/banner/1.jpeg",
 		alt: "Crane sky line",
+		title: "Building Tomorrow's Skyline Today.",
+		subtitle: "Expert crane operations and high-rise construction solutions",
 	},
 	{
 		id: 2,
 		src: "/images/banner/2.jpeg",
 		alt: "Bulldozer",
+		title: "Powering Progress with Heavy Machinery.",
+		subtitle: "Precision earthmoving and site preparation services",
 	},
 	{
 		id: 3,
 		src: "/images/banner/3.jpeg",
 		alt: "Stories building",
+		title: "Multi-Story Excellence in Every Project.",
+		subtitle: "Commercial and residential building expertise",
 	},
 ];
 
@@ -43,10 +49,12 @@ export default function HeroSection() {
 	// 2. Auto-play Logic
 	useEffect(() => {
 		const timer = setInterval(() => {
-			setIndex((prev) => (prev + 1) % IMAGES.length);
+			setIndex((prev) => (prev + 1) % SLIDES.length);
 		}, SLIDE_DURATION);
 		return () => clearInterval(timer);
 	}, []);
+
+	const currentSlide = SLIDES[index];
 
 	return (
 		<div className="relative h-screen w-full overflow-hidden bg-black text-white">
@@ -115,7 +123,7 @@ export default function HeroSection() {
 			<div className="absolute inset-0 z-0">
 				<AnimatePresence mode="popLayout">
 					<motion.div
-						key={IMAGES[index].id}
+						key={currentSlide.id}
 						initial={{ opacity: 0, scale: 1.1 }}
 						animate={{ opacity: 1, scale: 1 }}
 						exit={{ opacity: 0 }}
@@ -124,8 +132,8 @@ export default function HeroSection() {
 					>
 						{/* The Image Itself - with the "Zoom In" effect */}
 						<motion.img
-							src={IMAGES[index].src}
-							alt={IMAGES[index].alt}
+							src={currentSlide.src}
+							alt={currentSlide.alt}
 							className="h-full w-full object-cover"
 							initial={{ scale: 1 }}
 							animate={{ scale: 1.15 }} // Zoom in target
@@ -142,31 +150,35 @@ export default function HeroSection() {
 			</div>
 
 			{/* --------------------------------------------------
-          HERO TEXT CONTENT (Static overlay)
+          HERO TEXT CONTENT (Dynamic overlay)
       -------------------------------------------------- */}
 			<div className="relative z-10 flex h-full flex-col items-start justify-end px-4 text-left pb-40">
 				<MaxWidthWrapper>
-					<motion.div
-						initial={{ opacity: 0, y: 30 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ duration: 1, delay: 0.5 }}
-						className="max-w-5xl"
-					>
-						<h1 className="mb-6 text-3xl font-unbounded font-extrabold sm:leading-20 tracking-tight text-white  md:text-8xl">
-							Where Construction Excellence Meets Energy
-							<span className="text-transparent bg-clip-text bg-linear-to-r from-orange-200 to-brand">
-								&nbsp;Innovation.
-							</span>
-						</h1>
-					</motion.div>
+					<AnimatePresence mode="wait">
+						<motion.div
+							key={currentSlide.id}
+							initial={{ opacity: 0, y: 30 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: -20 }}
+							transition={{ duration: 0.8, ease: "easeOut" }}
+							className="max-w-5xl"
+						>
+							<h1 className="mb-4 text-4xl font-unbounded font-extrabold sm:leading-20 tracking-tight text-white md:text-7xl">
+								{currentSlide.title}
+							</h1>
+							<p className="text-lg md:text-2xl text-white/80 font-medium max-w-2xl">
+								{currentSlide.subtitle}
+							</p>
+						</motion.div>
+					</AnimatePresence>
 					<div className="h-px w-full bg-white/20 my-5"></div>
 				</MaxWidthWrapper>
 			</div>
 
 			<MaxWidthWrapper>
-				<div className="absolute bottom-12 left-6 z-20  md:left-30">
+				<div className="absolute bottom-12 left-6 z-20 md:left-30">
 					<div className="flex gap-4">
-						{IMAGES.map((_, i) => (
+						{SLIDES.map((_, i) => (
 							<button
 								key={i}
 								onClick={() => setIndex(i)}
@@ -179,7 +191,7 @@ export default function HeroSection() {
 										"h-2 w-2 rounded-full transition-all duration-500",
 										i === index
 											? "bg-transparent"
-											: "bg-white/40 group-hover:bg-white"
+											: "bg-white/40 group-hover:bg-white",
 									)}
 								/>
 
@@ -219,7 +231,7 @@ export default function HeroSection() {
 					</span>
 					<div className="h-12 w-px bg-linear-to-b from-slate-400 to-transparent"></div>
 				</motion.div>
-				<div className="absolute bottom-12  z-20 flex md:right-30  w-md">
+				<div className="absolute bottom-12 z-20 flex md:right-30 w-md">
 					<div className="flex flex-col sm:flex-row sm:justify-between items-center w-full gap-2">
 						<div className="flex justify-start">
 							<div className="justify-start">

@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://girona.com"),
 	title: {
 		template: "%s | Girona.com",
-		default: "Girona - Construction companies in Warri, Nigeria",
+		default: "Girona - Where excellence meets innovative solutions",
 	},
-	description: "girona Construction companies in Warri, Nigeria",
+	description: "Girona where excellence meets innovative solutions",
 	keywords: [
 		"Construction girona",
 		"Construction companies in Warri",
@@ -69,7 +69,7 @@ export default function RootLayout({
 			<body
 				className={cn(
 					` ${inter.variable} ${unbounded.variable}  font-inter`,
-					"min-h-screen bg-background  whitespace-pre-line overscroll-none antialiased"
+					"min-h-screen bg-background  whitespace-pre-line overscroll-none antialiased",
 				)}
 			>
 				{children}
