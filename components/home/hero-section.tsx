@@ -15,7 +15,8 @@ const SLIDES = [
 		src: "/images/banner/1.jpeg",
 		alt: "Crane sky line",
 		title: "Building Tomorrow's Skyline Today.",
-		subtitle: "Expert crane operations and high-rise construction solutions",
+		subtitle:
+			"Expert crane operations and high quality civil construction solutions",
 	},
 	{
 		id: 2,

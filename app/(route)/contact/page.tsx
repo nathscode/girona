@@ -48,7 +48,9 @@ const ContactPage = () => {
 												<MapPin className="size-5 text-gray-400" />
 											</div>
 											<div className="justify-start ms-5">
-												<p>Km 3, Npa Expressway, Ekpan-Warri ,Delta State</p>
+												<p>
+													Km 3, Npa Expressway, <br /> Ekpan-Warri, Delta State.
+												</p>
 											</div>
 										</div>
 										<div className="flex justify-start items-start">
@@ -56,8 +58,8 @@ const ContactPage = () => {
 												<Mail className="size-5 text-gray-400" />
 											</div>
 											<div className="justify-start ms-5">
-												<Link href="mail:support@gironalimited.com">
-													support@gironalimited.com
+												<Link href="mail:info@gironalimited.com">
+													info@gironalimited.com
 												</Link>
 											</div>
 										</div>
@@ -66,7 +68,7 @@ const ContactPage = () => {
 												<PhoneCall className="size-5 text-gray-400" />
 											</div>
 											<div className="justify-start ms-5">
-												<Link href="tel:+2348036926726">(234)803 692 6726</Link>
+												<Link href="tel:+2348054578609">(234)805 457 8609</Link>
 											</div>
 										</div>
 									</div>

@@ -16,10 +16,10 @@ const Footer = () => {
 						<div className="flex flex-col gap-2 justify-start ms-5">
 							<h5 className="font-semibold text-sm text-gray-400">Call Us</h5>
 							<Link
-								href={`tel:+2348036926726`}
+								href={`tel:+2348054578609`}
 								className="font-bold text-lg sm:text-xl text-white"
 							>
-								(234)803 692 6726
+								(234)805 457 8609
 							</Link>
 						</div>
 					</div>
@@ -32,10 +32,10 @@ const Footer = () => {
 								Need Support
 							</h5>
 							<Link
-								href={`mail:support@gironalimited.com`}
+								href={`mail:info@gironalimited.com`}
 								className="font-bold text-lg sm:text-xl text-white"
 							>
-								support@gironalimited.com
+								info@gironalimited.com
 							</Link>
 						</div>
 					</div>

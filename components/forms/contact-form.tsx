@@ -98,12 +98,15 @@ export default function ContactForm() {
 			} else {
 				setSubmitStatus("error");
 				setSubmitMessage(
-					result.error || "Failed to send your message. Please try again."
+					result.error ||
+						"Failed to send your message. Please try again or send direct email instead to info@gironalimited.com",
 				);
 			}
 		} catch (error) {
 			setSubmitStatus("error");
-			setSubmitMessage("An unexpected error occurred. Please try again.");
+			setSubmitMessage(
+				"An unexpected error occurred. Please try again or send direct email instead to info@gironalimited.com",
+			);
 		} finally {
 			setIsSubmitting(false);
 		}
