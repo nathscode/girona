@@ -16,9 +16,9 @@ const unbounded = Unbounded({
 	variable: "--font-unbounded",
 });
 export const metadata: Metadata = {
-	metadataBase: new URL("https://girona.com"),
+	metadataBase: new URL("https://gironalimited.com"),
 	title: {
-		template: "%s | Girona.com",
+		template: "%s | Girona",
 		default: "Girona - Where excellence meets innovative solutions",
 	},
 	description: "Girona where excellence meets innovative solutions",
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
 		"color-scheme": "light",
 		"twitter:image": "/images/girona_summary.png",
 		"twitter:card": "summary_large_image",
-		"og:url": "https://girona.com",
+		"og:url": "https://gironalimited.com",
 		"og:image": "/images/girona_summary.png",
 		"og:type": "website",
 	},
 	openGraph: {
 		title: "girona - Construction companies in Warri, Nigeria",
 		description: "girona Construction companies in Warri, Nigeria",
-		url: "https://girona.com",
+		url: "https://gironalimited.com",
 		siteName: "girona",
 		images: [
 			{
