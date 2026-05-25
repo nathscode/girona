@@ -18,6 +18,36 @@ export interface ServiceType {
 }
 const services: ServiceType[] = [
 	{
+		title: "Oil Servicing",
+		icon: <Icons.oil className="size-14 fill-white" />,
+		description:
+			"Comprehensive oil field services including well intervention, maintenance, and production optimization for upstream oil operations.",
+	},
+	{
+		title: "Gas Servicing",
+		icon: <Icons.gas className="size-14 fill-white" />,
+		description:
+			"Specialized gas processing, pipeline maintenance, and infrastructure services for natural gas production and distribution systems.",
+	},
+	{
+		title: "Civil & Mechanical Works",
+		icon: <Icons.civilMech className="size-14 fill-white" />,
+		description:
+			"Integrated civil and mechanical construction services including structural steel, concrete works, and mechanical system installations.",
+	},
+	{
+		title: "Heavy Duty Equipment Lease",
+		icon: <Icons.heavyEquipment className="size-14 fill-white" />,
+		description:
+			"Rental and leasing of heavy construction machinery including excavators, cranes, bulldozers, and specialized industrial equipment.",
+	},
+	{
+		title: "Procurement",
+		icon: <Icons.procurement className="size-14 fill-white" />,
+		description:
+			"Strategic sourcing and supply chain management for construction materials, industrial equipment, and project-specific procurement needs.",
+	},
+	{
 		title: "Civil Works",
 		icon: <Icons.build className="size-14 fill-white" />,
 		description:

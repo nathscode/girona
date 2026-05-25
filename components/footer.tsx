@@ -29,7 +29,7 @@ const Footer = () => {
 						</div>
 						<div className="flex flex-col gap-2 justify-start ms-5">
 							<h5 className="font-semibold text-sm text-gray-400">
-								Need Support
+								For Inquiries
 							</h5>
 							<Link
 								href={`mail:info@gironalimited.com`}

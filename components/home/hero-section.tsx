@@ -38,6 +38,8 @@ const NAV_LINKS = [
 	{ name: "About", href: "/about" },
 	{ name: "Service", href: "/services" },
 	{ name: "Projects", href: "/projects" },
+	{ name: "Careers", href: "/careers" },
+	{ name: "HSE", href: "/hse" },
 	{ name: "Contact", href: "/contact" },
 ];
 
@@ -68,7 +70,7 @@ export default function HeroSection() {
 					href="/"
 					className="text-2xl font-bold tracking-tighter text-white"
 				>
-					<Icons.logo className="size-10 fill-brand" />
+					<Icons.logo2 className="size-10" />
 				</Link>
 
 				{/* Desktop Nav */}

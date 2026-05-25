@@ -28,23 +28,38 @@ export interface WorkType {
 }
 const works: WorkType[] = [
 	{
-		title: "complex building at ekpan express",
-		image: "/images/works/1.jpeg",
+		title: "Procurement of materials for construction",
+		image: "/images/works/1.jpg",
 		tags: ["commercial"],
 	},
 	{
-		title: "Ring light installation at refinery",
-		image: "/images/works/2.jpeg",
+		title: "Gas pipeline installation at refinery",
+		image: "/images/works/2.jpg",
 		tags: ["commercial", "civil"],
 	},
 	{
-		title: "complex building at ekpan express",
-		image: "/images/works/1.jpeg",
+		title: "Pipeline construction and maintenance",
+		image: "/images/works/3.jpg",
 		tags: ["commercial"],
 	},
 	{
-		title: "Ring light installation at refinery",
-		image: "/images/works/2.jpeg",
+		title: "Installation of green industrial tanks",
+		image: "/images/works/4.jpg",
+		tags: ["commercial", "civil"],
+	},
+	{
+		title: "Maintenance and installation of industrial metal pipe fittings",
+		image: "/images/works/5.jpg",
+		tags: ["commercial", "civil"],
+	},
+	{
+		title: "Pipeline Construction and Maintenance",
+		image: "/images/works/6.jpg",
+		tags: ["commercial", "civil"],
+	},
+	{
+		title: "Supply of heavy duty industrial equipment",
+		image: "/images/works/7.jpg",
 		tags: ["commercial", "civil"],
 	},
 ];
@@ -59,8 +74,8 @@ const ProjectPage = () => {
 						<div className="flex flex-col px-5">
 							<div className="flex flex-col w-full sm:py-40">
 								<div className="grid gap-5 row-gap-10 lg:grid-cols-2">
-									{works.slice(0, 4).map((work, index) => (
-										<WorkCard key={`work-${index}`} work={work} />
+									{works.map((work, index) => (
+										<WorkCard key={`work-${index}`} work={work} index={index} />
 									))}
 								</div>
 							</div>
