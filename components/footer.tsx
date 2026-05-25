@@ -57,7 +57,7 @@ const Footer = () => {
 					<div className="w-full sm:w-1/3">
 						<div className="flex flex-col w-full">
 							<div className="text-2xl font-bold tracking-tighter text-white">
-								<Icons.logo className="size-14 fill-brand" />
+								<Icons.logo2 className="size-14" />
 							</div>
 							<p className="text-base text-gray-400 mt-5">
 								To deliver exceptional engineering, construction, and energy
