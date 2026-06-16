@@ -21,7 +21,7 @@ const SLIDES = [
 	},
 	{
 		id: 2,
-		src: "/images/banner/2.png",
+		src: "/images/banner/4.png",
 		alt: "Bulldozer",
 		title: "Maritime operations",
 		subtitle:
@@ -37,7 +37,7 @@ const SLIDES = [
 	},
 	{
 		id: 4,
-		src: "/images/banner/4.png",
+		src: "/images/banner/2.png",
 		alt: "Stories building",
 		title: "Heavy machinery leasing services",
 		subtitle:
