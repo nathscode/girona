@@ -16,7 +16,7 @@ const MiniAboutSection = (props: Props) => {
 					</div>
 					<div className="lg:col-span-8">
 						<h5 className="text-white font-semibold border-b border-primary-foreground/20 pb-4 mb-4 text-lg">
-							Girona Limited is a leading indigenous oil services company,
+							Girona Limited is a leading indigenous oil servicing company,
 							providing high standard solutions to the upstream segment of
 							Nigeria's oil and gas industry.
 						</h5>

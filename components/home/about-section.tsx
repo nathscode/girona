@@ -25,23 +25,23 @@ const AboutSection = () => {
 				<div className="flex flex-col justify-center px-5 sm:pl-10 mb-10 sm:mb-0">
 					<div className="max-w-xl mb-6">
 						<h2 className="text-xl text-black font-bold mb-4">
-							As a national leader in our industry, we are revolutionizing what
-							you expect from a contractor.
+							Engineering Excellence across multiple sectors
 						</h2>
 						<p className="text-base text-neutral-600">
-							Girona Limited is a leading Nigerian construction and engineering
-							firm now expanded to offer comprehensive energy services. We
-							provide end-to-end project delivery - from feasibility studies and
-							design through construction, commissioning, and maintenance -
-							across the full value chain of energy infrastructure. Our
-							multidisciplinary team supports clients in the oil & gas, power,
-							and industrial sectors, delivering turnkey solutions with
-							efficiency and precision. With a diverse portfolio of civil,
-							structural, mechanical, and electrical works, Girona&apos;s
-							capabilities extend to pipelines, facilities, and specialized
-							energy projects. As one industry example highlights, end-to- end
-							integrated solutions are essential for fuel and energy producers a
-							benchmark that guides our comprehensive approach.
+							Girona Limited is a wholly Nigerian-owned engineering and project
+							services company established in 2018. We provide innovative and
+							reliable solutions across engineering, construction, procurement,
+							logistics, manpower supply, maritime operations, and equipment
+							leasing.
+							<br />
+							<br />
+							Driven by a commitment to quality, safety, and customer
+							satisfaction, we partner with government agencies, oil and gas
+							companies, power and energy organizations, and industrial clients
+							to deliver projects efficiently and professionally. Our team of
+							experienced professionals combines industry expertise with best
+							business practices to provide services that meet and exceed client
+							expectations.
 						</p>
 						<div className="my-4">
 							<CustomButton
@@ -71,7 +71,7 @@ const AboutSection = () => {
 							<div className="flex items-center justify-start">
 								<div className="justify-start">
 									<h1 className=" font-unbounded font-extrabold sm:leading-20 tracking-tight text-brand  text-7xl">
-										100+
+										20+
 									</h1>
 								</div>
 								<div className="justify-start ms-2 w-2.5">

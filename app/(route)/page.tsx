@@ -1,6 +1,6 @@
 import Footer from "@/components/footer";
 import AboutSection from "@/components/home/about-section";
-import BuildSection from "@/components/home/build-section";
+import GallerySection from "@/components/home/company-gallery";
 import CtaSection from "@/components/home/cta-section";
 import HeroSection from "@/components/home/hero-section";
 import MiniAboutSection from "@/components/home/mini-about-section";
@@ -16,11 +16,10 @@ export default function Home() {
 			<AboutSection />
 			<ServicesSection />
 			<ValueSection />
-			<BuildSection />
+			<GallerySection />
 			<PartnerSection />
 			<CtaSection />
 			<Footer />
 		</div>
 	);
 }
-

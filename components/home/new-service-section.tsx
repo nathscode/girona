@@ -2,34 +2,32 @@
 
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform, useInView } from "motion/react";
+import Link from "next/link";
 
 const services = [
 	{
 		id: "01",
-		title: "Civil Works",
+		title: "Engineering Construction & Maintenance",
 		description:
-			"Site preparation, earthworks, concrete foundations, structural construction for buildings, bridges, roadways and civil infrastructure.",
+			"Comprehensive engineering solutions including civil, mechanical, and electrical construction, installation, maintenance, and facility upgrades.",
 		image: "/images/civil.jpg",
 		accent: "#C8A96E",
-		keywords: ["Earthworks", "Foundations", "Infrastructure"],
 	},
 	{
 		id: "02",
-		title: "Structural Fabrication",
+		title: "Pipeline Construction & Maintenance",
 		description:
-			"Fabrication and erection of steel structures, modular units, and specialty frames.",
+			"Pipeline construction, laying, inspection, pigging, corrosion control, and production facility maintenance services for the oil and gas sector.",
 		image: "/images/drilling.jpg",
 		accent: "#7E9CAE",
-		keywords: ["Steel Structures", "Modular Units", "Erection"],
 	},
 	{
 		id: "03",
-		title: "Mechanical & Piping",
+		title: "Procurement & Logistics",
 		description:
-			"Design and installation of mechanical systems and pressure piping for industrial facilities, including fabrication of skids, heat exchangers, and storage tanks.",
+			"Strategic sourcing, procurement, supply, and logistics support for industrial, engineering, and energy projects.",
 		image: "/images/pipeline.png",
 		accent: "#B07E8A",
-		keywords: ["Piping Systems", "Heat Exchangers", "Storage Tanks"],
 	},
 ];
 
@@ -156,27 +154,6 @@ function ServiceCard({
 
 				{/* Bottom: title + desc + keywords */}
 				<div className="space-y-5">
-					{/* Keywords */}
-					<motion.div
-						className="flex flex-wrap gap-2"
-						animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 10 }}
-						transition={{ duration: 0.35, ease: "easeOut" }}
-					>
-						{service.keywords.map((kw) => (
-							<span
-								key={kw}
-								className="text-[10px] font-mono tracking-widest uppercase px-2.5 py-1 border rounded-full whitespace-nowrap"
-								style={{
-									borderColor: `${service.accent}66`,
-									color: service.accent,
-									backgroundColor: `${service.accent}18`,
-								}}
-							>
-								{kw}
-							</span>
-						))}
-					</motion.div>
-
 					{/* Title */}
 					<h2
 						className="text-white font-bold leading-none"
@@ -216,12 +193,13 @@ function ServiceCard({
 						animate={{ opacity: isHovered ? 1 : 0 }}
 						transition={{ duration: 0.3, delay: 0.05 }}
 					>
-						<span
+						<Link
+							href={"/services"}
 							className="text-xs font-mono tracking-[0.15em] uppercase whitespace-nowrap"
 							style={{ color: service.accent }}
 						>
 							Learn More
-						</span>
+						</Link>
 						<motion.svg
 							width="16"
 							height="16"

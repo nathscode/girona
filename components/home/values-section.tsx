@@ -8,7 +8,7 @@ const ValueSection = () => {
 
 	// Vision content
 	const visionContent = {
-		title: "Building today to transform tomorrow",
+		title: "To be a global company known for its excellent service delivery",
 		description:
 			"To be recognized as Nigeria's premier integrated energy infrastructure solutions provider, empowering communities with sustainable, innovative, and world-class services",
 		items: [
@@ -19,7 +19,7 @@ const ValueSection = () => {
 			"Building with trust",
 			"Building safely",
 		],
-		image: "/images/about-3.jpeg",
+		image: "/images/machines/machine6.png",
 	};
 
 	// Core Values content
@@ -35,7 +35,7 @@ const ValueSection = () => {
 			"Teamwork",
 			"Sustainability",
 		],
-		image: "/images/about-2.jpeg",
+		image: "/images/machines/machine3.png",
 	};
 	const activeContent = activeTab === "vision" ? visionContent : valuesContent;
 

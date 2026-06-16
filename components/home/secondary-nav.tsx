@@ -7,6 +7,7 @@ import { useState } from "react";
 import MaxWidthWrapper from "../common/max-width-wrapper";
 import { Icons } from "../icons";
 import CustomButton from "../common/button";
+import CompanyLogo from "../common/company-logo";
 
 const NAV_LINKS = [
 	{ name: "About", href: "/about" },
@@ -34,7 +35,7 @@ export default function SecondaryNav({ title }: Props) {
 					href="/"
 					className="text-2xl font-bold tracking-tighter text-white"
 				>
-					<Icons.logo2 className="size-10" />
+					<CompanyLogo className="size-10" />
 				</Link>
 
 				{/* Desktop Nav */}

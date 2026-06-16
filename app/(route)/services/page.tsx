@@ -16,74 +16,64 @@ export interface ServiceType {
 	icon: React.ReactNode;
 	description: string;
 }
+
 const services: ServiceType[] = [
 	{
-		title: "Oil Servicing",
-		icon: <Icons.oil className="size-14 fill-white" />,
-		description:
-			"Comprehensive oil field services including well intervention, maintenance, and production optimization for upstream oil operations.",
-	},
-	{
-		title: "Gas Servicing",
-		icon: <Icons.gas className="size-14 fill-white" />,
-		description:
-			"Specialized gas processing, pipeline maintenance, and infrastructure services for natural gas production and distribution systems.",
-	},
-	{
-		title: "Civil & Mechanical Works",
+		title: "Engineering Construction & Maintenance",
 		icon: <Icons.civilMech className="size-14 fill-white" />,
 		description:
-			"Integrated civil and mechanical construction services including structural steel, concrete works, and mechanical system installations.",
+			"Comprehensive engineering solutions including civil, mechanical, and electrical construction, installation, maintenance, and facility upgrades.",
 	},
 	{
-		title: "Heavy Duty Equipment Lease",
-		icon: <Icons.heavyEquipment className="size-14 fill-white" />,
-		description:
-			"Rental and leasing of heavy construction machinery including excavators, cranes, bulldozers, and specialized industrial equipment.",
-	},
-	{
-		title: "Procurement",
-		icon: <Icons.procurement className="size-14 fill-white" />,
-		description:
-			"Strategic sourcing and supply chain management for construction materials, industrial equipment, and project-specific procurement needs.",
-	},
-	{
-		title: "Civil Works",
-		icon: <Icons.build className="size-14 fill-white" />,
-		description:
-			"Site preparation, earthworks, concrete foundations, structural construction for buildings, bridges, roadways and civil infrastructure.",
-	},
-	{
-		title: "Structural Fabrication",
-		icon: <Icons.welding className="size-14 fill-white" />,
-		description:
-			"Fabrication and erection of steel structures, modular units, and specialty frames.",
-	},
-	{
-		title: "Mechanical & Piping",
+		title: "Pipeline Construction & Maintenance",
 		icon: <Icons.piping className="size-14 fill-white" />,
 		description:
-			"Design and installation of mechanical systems and pressure piping for industrial facilities, including fabrication of skids, heat exchangers, and storage tanks",
+			"Pipeline construction, laying, inspection, pigging, corrosion control, and production facility maintenance services for the oil and gas sector.",
 	},
 	{
-		title: "Electrical & Instrumentation",
-		icon: <Icons.electrical className="size-14 fill-white" />,
+		title: "Procurement & Logistics",
+		icon: <Icons.procurement className="size-14 fill-white" />,
 		description:
-			"Complete electrical systems (power distribution, lighting) and instrumentation and control works (SCADA, PLC systems, metering) tailored to energy and industrial clients.",
+			"Strategic sourcing, procurement, supply, and logistics support for industrial, engineering, and energy projects.",
 	},
 	{
-		title: "Project & Construction Management",
-		icon: <Icons.lift className="size-14 fill-white" />,
+		title: "Maritime Operations & Equipment Supply",
+		icon: <Icons.oil className="size-14 fill-white" />,
 		description:
-			"Turnkey execution of projects under EPC (Engineering, Procurement, Construction) or EPCM models, with robust planning,procurement, and contract management.",
+			"Supply of marine vessels and equipment including houseboats, tugboats, barges, crew boats, and related marine assets.",
 	},
 	{
-		title: "Facilities Maintenance",
+		title: "Heavy Equipment Leasing",
+		icon: <Icons.heavyEquipment className="size-14 fill-white" />,
+		description:
+			"Leasing and maintenance of excavators, cranes, forklifts, bulldozers, swamp buggies, payloaders, and other heavy-duty equipment.",
+	},
+	{
+		title: "Metal Fabrication",
+		icon: <Icons.welding className="size-14 fill-white" />,
+		description:
+			"Design and fabrication of industrial structures, storage tanks, and custom metal components for various applications.",
+	},
+	{
+		title: "Technical Manpower Supply",
 		icon: <Icons.vest className="size-14 fill-white" />,
 		description:
-			"Ongoing maintenance and facility management services for industrial plants, ensuring operational reliability and extending asset life.",
+			"Provision of qualified local and foreign technical personnel for engineering, construction, operations, and maintenance projects.",
+	},
+	{
+		title: "Document Management Services",
+		icon: <Icons.build className="size-14 fill-white" />,
+		description:
+			"Development and implementation of document management systems in line with ISO standards and industry best practices.",
+	},
+	{
+		title: "Corporate Governance Consultancy",
+		icon: <Icons.electrical className="size-14 fill-white" />,
+		description:
+			"Contractor prequalification, contractor management systems, due diligence services, and regulatory verification support.",
 	},
 ];
+
 const ServicePage = () => {
 	return (
 		<>

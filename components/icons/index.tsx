@@ -65,6 +65,7 @@ export const Icons = {
 			></path>{" "}
 		</svg>
 	),
+
 	shield: (props: IconProps) => (
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
 			<path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0z" />

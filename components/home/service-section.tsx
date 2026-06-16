@@ -10,22 +10,22 @@ export interface ServiceType {
 }
 const services: ServiceType[] = [
 	{
-		title: "Civil Works",
+		title: "Engineering Construction & Maintenance",
 		icon: <Icons.build className="size-14 fill-white" />,
 		description:
 			"Site preparation, earthworks, concrete foundations, structural construction for buildings, bridges, roadways and civil infrastructure.",
 	},
 	{
-		title: "Structural Fabrication",
+		title: "Pipeline Construction & Maintenance",
 		icon: <Icons.welding className="size-14 fill-white" />,
 		description:
-			"Fabrication and erection of steel structures, modular units, and specialty frames.",
+			"Pipeline construction, laying, inspection, pigging, corrosion control, and production facility maintenance services for the oil and gas sector.",
 	},
 	{
-		title: "Mechanical & Piping",
+		title: "Procurement & Logistics",
 		icon: <Icons.piping className="size-14 fill-white" />,
 		description:
-			"Design and installation of mechanical systems and pressure piping for industrial facilities, including fabrication of skids, heat exchangers, and storage tanks",
+			"Strategic sourcing, procurement, supply, and logistics support for industrial, engineering, and energy projects.",
 	},
 	{
 		title: "Electrical & Instrumentation",

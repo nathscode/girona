@@ -3,6 +3,7 @@ import Link from "next/link";
 import MaxWidthWrapper from "./common/max-width-wrapper";
 import { Icons } from "./icons";
 import CustomButton from "./common/button";
+import CompanyLogo from "./common/company-logo";
 
 const Footer = () => {
 	return (
@@ -37,6 +38,12 @@ const Footer = () => {
 							>
 								info@gironalimited.com
 							</Link>
+							<Link
+								href={`mail:gironalimited@gmail.com`}
+								className="font-bold text-lg sm:text-xl text-white"
+							>
+								gironalimited@gmail.com
+							</Link>
 						</div>
 					</div>
 					<div className="flex justify-start items-start w-full group py-5">
@@ -57,7 +64,7 @@ const Footer = () => {
 					<div className="w-full sm:w-1/3">
 						<div className="flex flex-col w-full">
 							<div className="text-2xl font-bold tracking-tighter text-white">
-								<Icons.logo2 className="size-14" />
+								<CompanyLogo className="size-14" />
 							</div>
 							<p className="text-base text-gray-400 mt-5">
 								To deliver exceptional engineering, construction, and energy
@@ -100,7 +107,9 @@ const Footer = () => {
 								</h2>
 								<div className="flex justify-start items-start w-full gap-1 my-4">
 									<Link
-										href={"#"}
+										href={
+											"https://www.facebook.com/share/1AEw6ZP48F/?mibextid=wwXIfr"
+										}
 										title="follow us on facebook"
 										className="flex flex-col justify-center items-center size-12 bg-[#262626] group hover:bg-brand transition-all duration-300 cursor-pointer"
 									>

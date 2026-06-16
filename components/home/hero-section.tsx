@@ -8,29 +8,40 @@ import { useEffect, useState } from "react";
 import { Icons } from "../icons";
 import CustomButton from "../common/button";
 import MaxWidthWrapper from "../common/max-width-wrapper";
+import CompanyLogo from "../common/company-logo";
 
 const SLIDES = [
 	{
 		id: 1,
-		src: "/images/banner/1.jpeg",
+		src: "/images/banner/1.png",
 		alt: "Crane sky line",
-		title: "Building Tomorrow's Skyline Today.",
+		title: "Oil Servicing",
 		subtitle:
-			"Expert crane operations and high quality civil construction solutions",
+			"We provide support for oil field operations, including equipment maintenance and on-site production support.",
 	},
 	{
 		id: 2,
-		src: "/images/banner/2.jpeg",
+		src: "/images/banner/2.png",
 		alt: "Bulldozer",
-		title: "Powering Progress with Heavy Machinery.",
-		subtitle: "Precision earthmoving and site preparation services",
+		title: "Maritime operations",
+		subtitle:
+			"We handle offshore logistics, including vessel support, personnel transport, and coordination of sea-based oil and gas activities.",
 	},
 	{
 		id: 3,
-		src: "/images/banner/3.jpeg",
+		src: "/images/banner/3.png",
 		alt: "Stories building",
-		title: "Multi-Story Excellence in Every Project.",
-		subtitle: "Commercial and residential building expertise",
+		title: "Engineering and drilling services",
+		subtitle:
+			"We delivers drilling and engineering solutions for oil exploration, including well drilling, site preparation, civil works and operational support.",
+	},
+	{
+		id: 4,
+		src: "/images/banner/4.png",
+		alt: "Stories building",
+		title: "Heavy machinery leasing services",
+		subtitle:
+			"We supply heavy industrial equipment for construction and oil field projects on a rental basis.",
 	},
 ];
 
@@ -70,7 +81,7 @@ export default function HeroSection() {
 					href="/"
 					className="text-2xl font-bold tracking-tighter text-white"
 				>
-					<Icons.logo2 className="size-10" />
+					<CompanyLogo className="size-12" />
 				</Link>
 
 				{/* Desktop Nav */}
