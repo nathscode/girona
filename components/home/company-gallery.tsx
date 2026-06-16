@@ -13,8 +13,8 @@ export interface GalleryImage {
 const galleryImages: GalleryImage[] = [
 	{
 		id: 1,
-		thumbnail: "/images/machines/machine1.png",
-		full: "/images/machines/machine1.png",
+		thumbnail: "/images/machines/mac.png",
+		full: "/images/machines/mac.png",
 		title: "Crane machine",
 	},
 	{
