@@ -87,7 +87,7 @@ export default function SecondaryNav({ title }: Props) {
 			<div className="absolute inset-0 z-0">
 				<div className="absolute inset-0 h-full w-full">
 					<img
-						src={"/images/banner/2.jpeg"}
+						src={"/images/banner/2.png"}
 						alt={"girona background image"}
 						className="h-full w-full object-cover"
 					/>
