@@ -4,12 +4,12 @@ import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useState } from "react";
-import MaxWidthWrapper from "../common/max-width-wrapper";
-import { Icons } from "../icons";
 import CustomButton from "../common/button";
 import CompanyLogo from "../common/company-logo";
+import MaxWidthWrapper from "../common/max-width-wrapper";
 
 const NAV_LINKS = [
+	{ name: "Home", href: "/" },
 	{ name: "About", href: "/about" },
 	{ name: "Service", href: "/services" },
 	{ name: "Projects", href: "/projects" },

@@ -5,10 +5,10 @@ import { Menu, Star, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Icons } from "../icons";
 import CustomButton from "../common/button";
-import MaxWidthWrapper from "../common/max-width-wrapper";
 import CompanyLogo from "../common/company-logo";
+import MaxWidthWrapper from "../common/max-width-wrapper";
+import { Icons } from "../icons";
 
 const SLIDES = [
 	{
@@ -46,6 +46,7 @@ const SLIDES = [
 ];
 
 const NAV_LINKS = [
+	{ name: "Home", href: "/" },
 	{ name: "About", href: "/about" },
 	{ name: "Service", href: "/services" },
 	{ name: "Projects", href: "/projects" },
@@ -54,13 +55,12 @@ const NAV_LINKS = [
 	{ name: "Contact", href: "/contact" },
 ];
 
-const SLIDE_DURATION = 6000; // 6 seconds per slide
+const SLIDE_DURATION = 6000;
 
 export default function HeroSection() {
 	const [index, setIndex] = useState(0);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-	// 2. Auto-play Logic
 	useEffect(() => {
 		const timer = setInterval(() => {
 			setIndex((prev) => (prev + 1) % SLIDES.length);
@@ -81,7 +81,7 @@ export default function HeroSection() {
 					href="/"
 					className="text-2xl font-bold tracking-tighter text-white"
 				>
-					<CompanyLogo className="size-12" />
+					<CompanyLogo className="size-16" />
 				</Link>
 
 				{/* Desktop Nav */}
